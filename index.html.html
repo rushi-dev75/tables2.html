@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="">
+        <tr>
+            <th>Student_id</th>
+            <th>Student_Name</th>
+            <th>Student_Age</th>
+            <th>Student_Gender</th>
+        </tr>
+        <tr >
+            <td>101</td>
+            <td>rushi</td>
+            <td>21</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>sai</td>
+            <td>22</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>rakesh</td>
+            <td>23</td>
+            <td>male</td>
+            
+        </tr>
+    </table>
+    <br>
+    <table border="">
+        <tr>
+            <th>Student_id</th>
+            <td>101</td>
+            <td>102</td>
+            <td>103</td>
+        </tr>
+        <tr>
+            <th>Student_Name</th>
+            <td>sai</td>
+            <td>ram</td>
+            <td>hanuman</td>
+        </tr>
+        <tr>
+            <th>Student_Age</th>
+            <td>21</td>
+            <td>22</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <th>Student_Gender</th>
+            <td>Male</td>
+            <td>Male</td>
+            <td>Male</td>
+        </tr>
+    </table>
+    <br>
+
+    <table border="">
+        <tr>
+            <th >Full Name</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td>ravi</td>
+            <td>v</td>
+            <td>9.0</td>
+        </tr>
+        <tr>
+            <td>ravi</td>
+            <td>v</td>
+            <td>9.0</td>
+        </tr>
+        <tr>
+            <td>ravi</td>
+            <td>v</td>
+            <td>9.0</td>
+        </tr>
+    </table>
+    <br>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Rowspan Example</title>
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <th rowspan="5">Full Name</th>
+        <td>Ravi</td>
+        <td>V</td>
+    </tr>
+    <tr>
+        <td>Ramya</td>
+        <td>Suresh</td>
+    </tr>
+    <tr>
+        <td>Sachin</td>
+        <td>Shekar</td>
+    </tr>
+    <tr>
+        <td>Smithha</td>
+        <td>R</td>
+    </tr>
+    <tr>
+        <td>Divya</td>
+        <td>D</td>
+    </tr>
+
+    <tr>
+        <th rowspan="5">Rating</th>
+        <td colspan="2">7.8</td>
+    </tr>
+    <tr>
+        <td colspan="2">8</td>
+    </tr>
+    <tr>
+        <td colspan="2">6.7</td>
+    </tr>
+    <tr>
+        <td colspan="2">9</td>
+    </tr>
+    <tr>
+        <td colspan="2">9</td>
+    </tr>
+</table>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Table</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+
+        table {
+            width: 90%;
+            margin: 30px auto;
+            border: 5px solid gray;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        .day {
+            font-weight: bold;
+        }
+
+        .lunch {
+            font-weight: bold;
+            font-size: 22px;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>TIME TABLE</h1>
+
+    <table>
+        <tr>
+            <th>Day/Period</th>
+            <th>I<br>9:30-10:20</th>
+            <th>II<br>10:20-11:10</th>
+            <th>III<br>11:10-12:00</th>
+            <th>12:00-12:40<br><small>LUNCH</small></th>
+            <th>IV<br>12:40-1:30</th>
+            <th>V<br>1:30-2:20</th>
+            <th>VI<br>2:20-3:10</th>
+            <th>VII<br>3:10-4:00</th>
+        </tr>
+
+        <!-- Monday -->
+        <tr>
+            <td class="day">Monday</td>
+            <td>Eng</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td class="lunch" rowspan="6">
+                L<br>U<br>N<br>C<br>H
+            </td>
+            <td colspan="3">LAB</td>
+            <td>Phy</td>
+        </tr>
+
+        <!-- Tuesday -->
+        <tr>
+            <td class="day">Tuesday</td>
+            <td colspan="3">LAB</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td>SPORTS</td>
+        </tr>
+
+        <!-- Wednesday -->
+        <tr>
+            <td class="day">Wednesday</td>
+            <td>Mat</td>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3">LIBRARY</td>
+        </tr>
+
+        <!-- Thursday -->
+        <tr>
+            <td class="day">Thursday</td>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3">LAB</td>
+            <td>Mat</td>
+        </tr>
+
+        <!-- Friday -->
+        <tr>
+            <td class="day">Friday</td>
+            <td colspan="3">LAB</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td>Eng</td>
+            <td>Phy</td>
+        </tr>
+
+        <!-- Saturday -->
+        <tr>
+            <td class="day">Saturday</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td colspan="3">SEMINAR</td>
+            <td>SPORTS</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
+
+</body>
+</html>
+</body>
+</html>
